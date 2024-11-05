@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head data-th-replace="~{header :: head}"></head>
+<body>
+
+<header data-th-replace="~{header :: #page-header}"></header>
+
+<h1>환영합니다!</h1>
+<p>이 사이트는 팀 프로젝트를 관리하는 서비스를 제공합니다.</p>
+</body>
+</html>
+
+
+
+
+<!--data-th-utext => utext= unescapedtext/ ==> <b>안녕</b>하세요 이게 가능하다. escape 문자로 처리하지 않는다. = html해석에 포함된다./<b></b> 단순 텍스트가 아닌 html문법으로 간주한다.>!-->
+<!--<p data-th-text="100>20">표현식을 $없이 사용 할 수 있다. 결과값 true</p>
+<p data-th-text="${welcome == '안녕하세요!'}">결과값 true</p>
+<p data-th-text="(${welcome} == '안녕하세요!') ? 'hello'">조건문 if일때 결과값 hello</p>
+<p data-th-text="(${welcome} == '안녕하세요') ? 'Hello' : 'World!'">조건문 if일때 true일때, 결과값 Hello 나옴</p>
+<p data-th-text="(${welcome} == '안녕하세요!') ? 'Hello' : 'World!'">조건문 if일때 false일때, 결과값 World 나옴</p>
+<p data-th-text="(${welcome}) ?: '반가워!'">?:는 붙여라</p>
+<p data-th-text="(${welcome2}) ?: '반가워!'">welcome2가 없기에 반가워가 나오는것이 맞다!</p>
+<p data-th-text="|테스트: ${welcome} ?: '반가워!'|">|는 앞과 뒤 부분에 넣어야 하는 것이다</p>
+!-->
